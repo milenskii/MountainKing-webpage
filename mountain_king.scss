@@ -1,0 +1,159 @@
+@import "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900";
+@mixin img-properties {
+    height: auto;
+    max-width: 100%;
+}
+
+@mixin links-properties {
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 15px 10px;
+    font-size: 18px;
+}
+
+@mixin i_from_articles {
+    border: 2px solid rgb(194, 191, 3);
+    border-radius: 50%;
+    color: rgb(194, 191, 3);
+    padding: 25px;
+    font-size: 40px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    .header {
+        background-image: url("img/background-header.jpg");
+        background-size: cover;
+        height: auto;
+        filter: brightness(80%);
+        div {
+            padding-top: 4.5em;
+            padding-bottom: 4.5em;
+            h2 {
+                font-weight: 100;
+                color: rgb(167, 162, 162);
+                font-size: 3em;
+            }
+            h1 {
+                font-weight: 700;
+                font-size: 4em;
+            }
+            p {
+                padding-top: 1.6em;
+                padding-bottom: 1.6em;
+                font-style: italic;
+                font-size: 2em;
+                font-weight: 500;
+                text-shadow: 5px 5px 5px rgb(100, 95, 95);
+            }
+            .links {
+                padding: 2.5em;
+                a {
+                    @include links-properties;
+                }
+                #first {
+                    background-color: blue;
+                    margin-right: 10px;
+                }
+                #second {
+                    background-color: red;
+                }
+            }
+        }
+        img[alt=logo] {
+            width: 150px;
+            height: 100px;
+            padding: 25px;
+        }
+    }
+}
+
+main {
+    padding-top: 3em;
+    text-align: center;
+    article {
+        span {
+            @include i_from_articles;
+        }
+        .fa-usd {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        h2 {
+            padding-top: 20px;
+        }
+    }
+}
+
+section {
+    background-image: url("img/moon.jpg");
+    background-size: cover;
+    height: auto;
+    article {
+        box-sizing: border-box;
+        background-color: rgba(85, 75, 75, 0.6);
+        width: 40%;
+        height: 70%;
+        text-align: center;
+        color: white;
+        border: 2px solid rgb(190, 188, 14);
+        padding: 3em;
+        margin-left: 50px;
+        h2 {
+            padding-bottom: 1em;
+        }
+        p {
+            padding: 1em;
+        }
+        div {
+            padding: 2.5em;
+            button {
+                border-radius: 50%;
+                background-color: rgb(190, 188, 14);
+                padding: 2em;
+                width: 130px;
+                height: 130px;
+                font-size: 13px;
+                border: none;
+            }
+            #btn1 {
+                margin-right: 5em;
+            }
+        }
+    }
+    footer {
+        color: white;
+        padding: 3em;
+        span {
+            color: purple;
+        }
+        nav {
+            i {
+                border: 1px solid lightseagreen;
+                border-radius: 50%;
+                padding: 18px;
+                text-align: center;
+            }
+            .fa-facebook {
+                font-size: 25px;
+                padding-left: 21px;
+                padding-right: 21px;
+                border-color: rgb(4, 62, 223);
+                color: rgb(4, 62, 223);
+            }
+            .fa-twitter {
+                font-size: 25px;
+                border-color: rgb(5, 183, 228);
+                color: rgb(5, 183, 228);
+            }
+            .fa-instagram {
+                font-size: 25px;
+                color: rgb(127, 5, 143);
+                border-color: rgb(127, 5, 143);
+            }
+        }
+    }
+}

@@ -1,0 +1,114 @@
+@import "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900";
+body {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  box-sizing: border-box; }
+  body .header {
+    background-image: url("img/background-header.jpg");
+    background-size: cover;
+    height: auto;
+    filter: brightness(80%); }
+    body .header div {
+      padding-top: 4.5em;
+      padding-bottom: 4.5em; }
+      body .header div h2 {
+        font-weight: 100;
+        color: #a7a2a2;
+        font-size: 3em; }
+      body .header div h1 {
+        font-weight: 700;
+        font-size: 4em; }
+      body .header div p {
+        padding-top: 1.6em;
+        padding-bottom: 1.6em;
+        font-style: italic;
+        font-size: 2em;
+        font-weight: 500;
+        text-shadow: 5px 5px 5px #645f5f; }
+      body .header div .links {
+        padding: 2.5em; }
+        body .header div .links a {
+          color: white;
+          text-decoration: none;
+          border-radius: 30px;
+          padding: 15px 10px;
+          font-size: 18px; }
+        body .header div .links #first {
+          background-color: blue;
+          margin-right: 10px; }
+        body .header div .links #second {
+          background-color: red; }
+    body .header img[alt=logo] {
+      width: 150px;
+      height: 100px;
+      padding: 25px; }
+
+main {
+  padding-top: 3em;
+  text-align: center; }
+  main article span {
+    border: 2px solid #c2bf03;
+    border-radius: 50%;
+    color: #c2bf03;
+    padding: 25px;
+    font-size: 40px; }
+  main article .fa-usd {
+    padding-left: 10px;
+    padding-right: 10px; }
+  main article h2 {
+    padding-top: 20px; }
+
+section {
+  background-image: url("img/moon.jpg");
+  background-size: cover;
+  height: auto; }
+  section article {
+    box-sizing: border-box;
+    background-color: rgba(85, 75, 75, 0.6);
+    width: 40%;
+    height: 70%;
+    text-align: center;
+    color: white;
+    border: 2px solid #bebc0e;
+    padding: 3em;
+    margin-left: 50px; }
+    section article h2 {
+      padding-bottom: 1em; }
+    section article p {
+      padding: 1em; }
+    section article div {
+      padding: 2.5em; }
+      section article div button {
+        border-radius: 50%;
+        background-color: #bebc0e;
+        padding: 2em;
+        width: 130px;
+        height: 130px;
+        font-size: 13px;
+        border: none; }
+      section article div #btn1 {
+        margin-right: 5em; }
+  section footer {
+    color: white;
+    padding: 3em; }
+    section footer span {
+      color: purple; }
+    section footer nav i {
+      border: 1px solid lightseagreen;
+      border-radius: 50%;
+      padding: 18px;
+      text-align: center; }
+    section footer nav .fa-facebook {
+      font-size: 25px;
+      padding-left: 21px;
+      padding-right: 21px;
+      border-color: #043edf;
+      color: #043edf; }
+    section footer nav .fa-twitter {
+      font-size: 25px;
+      border-color: #05b7e4;
+      color: #05b7e4; }
+    section footer nav .fa-instagram {
+      font-size: 25px;
+      color: #7f058f;
+      border-color: #7f058f; }
